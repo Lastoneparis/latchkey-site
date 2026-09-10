@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Latchkey — every AI model, one app, your own keys</title>
+<meta name="description" content="Chat the moment you open it with Apple Intelligence on-device, or bring your own key for OpenAI, Anthropic, Google, DeepSeek, Groq and OpenRouter. Keys stay in the Keychain.">
+<style>
+:root{--bg:#fbfbfd;--doc:#fff;--ink:#14161a;--dim:#5d6470;--rule:#e4e6eb;
+      --key:#6d3bd4;--mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0d10;--doc:#131519;--ink:#e8eaee;--dim:#98a0ac;--rule:#242830;--key:#a583f5}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:15.5px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.doc{max-width:46rem;margin:0 auto;padding:0 22px 90px}
+header{padding:70px 0 30px}
+.eyebrow{font-family:var(--mono);font-size:12px;color:var(--key);letter-spacing:.04em;margin-bottom:14px}
+h1{font-size:clamp(29px,5.6vw,42px);letter-spacing:-.024em;font-weight:640;line-height:1.16;max-width:18ch}
+.stand{color:var(--dim);margin-top:14px;font-size:18px;max-width:46ch}
+h2{font-size:19px;font-weight:640;letter-spacing:-.012em;margin:38px 0 12px;padding-top:24px;border-top:1px solid var(--rule)}
+p{margin-bottom:12px;color:var(--dim)}
+p.ink{color:var(--ink)}
+.flow{display:grid;gap:0;border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--doc);margin:8px 0 4px}
+.flow div{padding:15px 18px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:2.2rem 1fr;gap:14px;align-items:start}
+.flow div:last-child{border-bottom:0}
+.flow .n{font-family:var(--mono);font-size:12.5px;color:var(--key);padding-top:2px}
+.flow b{display:block;color:var(--ink);font-weight:620;font-size:15.5px}
+.flow span{color:var(--dim);font-size:14.5px}
+ul.feat{list-style:none;margin:4px 0 0}
+ul.feat li{padding:11px 0;border-bottom:1px solid var(--rule);color:var(--dim);font-size:15px}
+ul.feat li:last-child{border-bottom:0}
+ul.feat b{color:var(--ink);font-weight:620}
+.callout{background:var(--doc);border:1px solid var(--rule);border-left:3px solid var(--key);
+  border-radius:0 8px 8px 0;padding:16px 18px;margin:14px 0}
+.callout p:last-child{margin-bottom:0}
+a{color:var(--key)}
+footer{border-top:1px solid var(--rule);margin-top:46px;padding-top:22px;color:var(--dim);font-size:13px}
+</style>
+</head>
+<body>
+<div class="doc">
+
+<header>
+  <div class="eyebrow">latchkey</div>
+  <h1>Every model, one app, your own keys</h1>
+  <p class="stand">Start chatting the second you open it &mdash; Apple Intelligence runs on the device, with no key and no account. Bring your own key when you want a specific frontier model.</p>
+</header>
+
+<h2>Two ways to use it</h2>
+<div class="flow">
+  <div><span class="n">01</span><div><b>On-device, nothing to set up</b><span>Apple Intelligence answers straight from the iPhone. No key, no account, no network. This is the default on a device that supports it.</span></div></div>
+  <div><span class="n">02</span><div><b>Your key, your provider</b><span>Paste a key from OpenAI, Anthropic, Google, DeepSeek, Groq or OpenRouter and Latchkey lists exactly the models that key is entitled to.</span></div></div>
+</div>
+
+<h2>Why your own key</h2>
+<p>Subscription AI apps resell you someone else's account at a markup and cap what you can do. A key you hold is billed by the provider at their price, works at their rate limits rather than an app's, and is revocable by you at any moment.</p>
+<div class="callout">
+  <p class="ink"><b>Latchkey has no server.</b> Your keys sit in the iOS Keychain and your requests go straight from your iPhone to the provider you chose. We never see a prompt, a reply, or a key &mdash; not by policy, but because there is nowhere for them to go.</p>
+</div>
+
+<h2>What Premium adds</h2>
+<ul class="feat">
+  <li><b>Documents and PDFs</b> &mdash; ask questions against a file you supply.</li>
+  <li><b>Web search</b> &mdash; let a model consult the live web before answering.</li>
+  <li><b>iCloud sync</b> &mdash; your conversations on your other devices, through your own iCloud.</li>
+  <li><b>Prompt library</b> &mdash; the prompts you reuse, one tap away.</li>
+  <li><b>Export</b> &mdash; take any conversation out as a file.</li>
+</ul>
+<p style="margin-top:14px">Premium never includes model usage. That is billed by your provider, or costs nothing at all on-device.</p>
+
+<h2>Reference</h2>
+<p>The full provider matrix, error codes and troubleshooting live on the <a href="support.html">support page</a>.</p>
+
+<footer>
+  <a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy</a> &middot;
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><br><br>
+  &copy; 2026 Oshi Lab &middot; contact@oshi-messenger.com
+</footer>
+</div>
+</body>
+</html>

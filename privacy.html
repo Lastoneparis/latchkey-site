@@ -2,48 +2,53 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Latchkey — Privacy Policy</title>
-<!-- social share (og/twitter) -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Hugo Moriceau">
-<meta property="og:title" content="Latchkey — Privacy Policy">
-<meta property="og:description" content="Chat with any AI model using your own API keys.">
-<meta property="og:url" content="https://lastoneparis.github.io/latchkey-site/privacy.html">
-<meta property="og:image" content="https://lastoneparis.github.io/latchkey-site/share.png">
-<meta property="og:image:secure_url" content="https://lastoneparis.github.io/latchkey-site/share.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Latchkey — Privacy Policy">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Latchkey — Privacy Policy">
-<meta name="twitter:description" content="Chat with any AI model using your own API keys.">
-<meta name="twitter:image" content="https://lastoneparis.github.io/latchkey-site/share.png">
-
 <style>
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:0 auto;padding:32px 20px;line-height:1.6;color:#1c1c1e}
-  h1{font-size:1.8rem} h2{font-size:1.2rem;margin-top:2rem} a{color:#4c8af0}
-  @media(prefers-color-scheme:dark){body{background:#000;color:#e5e5ea}}
+:root{--bg:#fbfbfd;--doc:#fff;--ink:#14161a;--dim:#5d6470;--rule:#e4e6eb;
+      --key:#6d3bd4;--mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0d10;--doc:#131519;--ink:#e8eaee;--dim:#98a0ac;--rule:#242830;--key:#a583f5}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:15.5px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.doc{max-width:46rem;margin:0 auto;padding:0 22px 90px}
+header{padding:58px 0 24px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:var(--mono);font-size:12px;color:var(--key);letter-spacing:.04em;margin-bottom:12px}
+h1{font-size:30px;letter-spacing:-.022em;font-weight:640}
+.sub{color:var(--dim);font-size:13.5px;margin-top:8px;font-family:var(--mono)}
+h2{font-size:18px;font-weight:640;letter-spacing:-.012em;margin:36px 0 10px;padding-top:22px;border-top:1px solid var(--rule)}
+p{margin-bottom:12px;color:var(--dim)}
+b{color:var(--ink)}
+.callout{background:var(--doc);border:1px solid var(--rule);border-left:3px solid var(--key);
+  border-radius:0 8px 8px 0;padding:16px 18px;margin:12px 0}
+.callout p:last-child{margin-bottom:0}
+a{color:var(--key)}
+footer{border-top:1px solid var(--rule);margin-top:44px;padding-top:22px;color:var(--dim);font-size:13px}
 </style>
 </head>
 <body>
-<h1>Latchkey Privacy Policy</h1>
-<p><em>Last updated: 9 July 2026</em></p>
+<div class="doc">
+<header>
+  <div class="eyebrow">latchkey / privacy</div>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Last updated 10 September 2026</p>
+</header>
 
-<p>Latchkey is a bring-your-own-key (BYOK) AI chat client. <strong>We host nothing and we do not collect, store, or transmit your data to our own servers.</strong></p>
+<p style="margin-top:20px">Latchkey is a bring-your-own-key AI chat client. We host nothing, and we do not collect, store or transmit your data to servers of our own &mdash; because we operate none.</p>
 
 <h2>What stays on your device</h2>
-<ul>
-  <li><strong>API keys</strong> — stored only in your device Keychain. They never leave your device except to authenticate directly with the AI provider you choose.</li>
-  <li><strong>Conversations</strong> — stored locally on your device. With Premium, they may sync through <strong>your own private iCloud</strong> (Apple CloudKit); we cannot read them.</li>
-</ul>
+<div class="callout">
+  <p><b>API keys</b> are stored only in your device Keychain. They leave the device solely to authenticate directly with the provider you chose.</p>
+  <p><b>Conversations</b> are stored locally. With Premium they may sync through your own private iCloud (Apple CloudKit), which we cannot read.</p>
+</div>
+
+<h2>Apple Intelligence</h2>
+<p>When you use the built-in on-device model, the prompt and the reply never leave your iPhone at all. No key, no account and no network request is involved.</p>
 
 <h2>Third-party AI providers</h2>
-<p>When you send a message, it goes <strong>directly from your device to the AI provider you selected</strong> (e.g. OpenAI, Anthropic, Google, DeepSeek, Groq, OpenRouter) using your own API key. Before your first message to a provider, Latchkey asks for your explicit consent and names the provider. Your use of each provider is governed by that provider's own privacy policy and terms. Latchkey is not affiliated with, endorsed by, or sponsored by any provider.</p>
+<p>When you send a message to a provider, it goes directly from your device to that provider (OpenAI, Anthropic, Google, DeepSeek, Groq or OpenRouter) using your own API key. Before your first message to a provider, Latchkey asks for your explicit consent and names it. Your use of each provider is governed by that provider's own privacy policy and terms. Latchkey is not affiliated with, endorsed by or sponsored by any provider.</p>
 
 <h2>Data we collect</h2>
-<p><strong>None.</strong> Latchkey has no analytics servers and no account system.</p>
+<p><b>None.</b> Latchkey has no analytics, no third-party tracking SDKs and no account system.</p>
 
 <h2>Purchases</h2>
 <p>Subscriptions and purchases are handled by Apple. We receive no payment information.</p>
@@ -51,9 +56,17 @@
 <h2>Children</h2>
 <p>Latchkey is rated 4+ and does not knowingly collect data from anyone.</p>
 
-<h2>Contact</h2>
-<p>Email: <a href="mailto:hugomoriceau@icloud.com">hugomoriceau@icloud.com</a></p>
+<h2>Your rights</h2>
+<p>We hold nothing about you, so there is nothing for us to export or delete. Deleting the app removes local data; turning off iCloud sync removes the iCloud copy.</p>
 
-<p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a></p>
+<h2>Contact</h2>
+<p><b>Oshi Lab</b> &mdash; contact@oshi-messenger.com. Never send us an API key: we do not need it, and a key sent by email should be considered compromised and rotated.</p>
+
+<footer>
+  <a href="index.html">Home</a> &middot; <a href="support.html">Support</a> &middot;
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><br><br>
+  &copy; 2026 Oshi Lab
+</footer>
+</div>
 </body>
 </html>
